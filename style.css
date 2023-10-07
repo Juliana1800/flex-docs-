@@ -1,0 +1,296 @@
+:root {
+    --corprimaria: #191D88;
+    --corsecudaria: #1450A3;
+    --corterciaria: #337CCF;
+    --corquaternaria: #FFC436;
+    --fontbody: Verdana, Geneva, Tahoma, sans-serif;
+    --cordefundocaixa: #FAF2D3;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    margin: 20px 50px;
+    text-align: justify;
+    background-color: #f6f3e7;
+}
+
+.espaco-do-h {
+    margin-bottom: 10px;
+    font-size: 20pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.espaco-do-h3 {
+    margin-bottom: 10px; 
+    font-size: 13pt;
+    font-family: var(--fontbody)
+}
+
+.p-descritivo {
+    margin-bottom: 10px;
+    font-family: var(--fontbody);
+    line-height: 30px;
+}
+.descrição-propriedade {
+    margin-bottom: 10px;
+    font-family: var(--fontbody);
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.propriedade-titulo {
+    color: var(--corquaternaria);
+    font-family: var(--fontbody);
+    font-size: 13pt;
+    text-align: center;
+}
+
+.valor-titulo {
+    color: var(--corquaternaria);
+    font-family: var(--fontbody);
+    font-size: 13pt;
+    text-align: center;
+}
+
+.propriedade {
+    font-family: var(--fontbody);
+    font-size: 10pt;
+    text-align: center;
+    color: var(--corprimaria);
+}
+
+.valor {
+    font-family: var(--fontbody);
+    font-size: 10pt;
+    text-align: center;
+}
+
+table, th, td {
+    border: 5px double var(--corprimaria);
+}
+
+table {
+    table-layout: auto;
+    width: 30%;
+    margin: 30px 450px;
+}
+
+th, td {
+    padding: 10px;   
+}
+.titulo-exemplo {
+    padding: 50px 0 10px 0;
+    font-size: 20pt;
+    font-family: var(--fontbody);
+    font-weight: bold;
+}
+.font {
+    font-size: 20pt;
+    font-family: var(--fontbody);
+    text-align:center;
+}
+.bullet {
+    margin-bottom: 10px;
+    font-family: var(--fontbody);
+    line-height: 30px;
+    list-style-type: square ;
+    margin: 0 0 0 50px;
+}
+.titulos {
+    font-family: var(--fontbody);
+    padding: 20px 20px 20px 0;
+    font-size: 15pt;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.font-prime {
+    font-size: 15pt;
+    font-family: var(--fontbody);
+    text-align:center;
+}
+.container {
+    height: 250px;
+    background-color: var(--cordefundocaixa);
+    border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
+    border-radius: 10px; 
+    justify-content: space-around;
+
+}
+
+.flex {
+    display: flex;  /*organizador dos itens flex*/
+
+}
+.container-direction {
+    height: 180px;
+    background-color: var(--cordefundocaixa);
+    border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.contido {
+    width: 150px;
+    height: 150px;
+    background-color: var(--cordefundocaixa);
+    border: 5px solid var(--corsecudaria);
+    border-radius: 10px;
+}
+
+.flex-direction {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--corsecudaria);
+    display: flex; 
+
+}
+.mini-cont {
+    height: 30px;
+    width: 30px;  
+    border: 5px solid var(--corterciaria);
+    border-radius: 10px;
+    background: var(--corquaternaria);     
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column-wrap {
+    flex-flow: column wrap;
+}
+.row-wrap {
+    flex-flow: row wrap;
+}
+.column-reverse-wrap {
+    flex-flow: column-reverse wrap;
+}
+.row-reverse-wrap {
+    flex-flow: row-reverse wrap;
+}
+.espacamento {
+    margin-top:20px;
+}
+.column-reverse-wrap {
+    flex-flow: column wrap-reverse;
+}
+.row-reverse-wrap {
+    flex-flow: row wrap-reverse;
+}
+.column-reverse-reverse {
+    flex-flow: column-reverse wrap-reverse;
+}
+.row-reverse-reverse {
+    flex-flow: row-reverse wrap-reverse;
+}
+.contido-pequeno {
+    width: 80px;
+    height: 80px;
+    background-color: var(--corquaternaria);
+    border: 5px solid var(--corsecudaria);
+    border-radius: 10px;
+
+}
+.contido-maior {
+    width: 75px;
+    height: 95px;
+    background-color: #bd8c1b;
+    border: 5px solid var(--corterciaria);
+    border-radius: 10px;
+
+}
+.align-content-center {
+    align-content: center;
+    flex-wrap: wrap;
+}
+.align-content-flex-start {
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.align-content-flex-end {
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.align-content-space-between {
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+    flex-wrap: wrap;   
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+
+}
+.align-items-flex-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+   
+}
+.align-items-baseline {
+    align-items: baseline; 
+    flex-wrap: wrap;
+}
+.align-items-strech {
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-flex-start {
+    justify-content: flex-start;
+}
+.justify-flex-end {
+    justify-content: flex-end;
+}
+.justify-space-between {
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.justify-space-around {
+    justify-content: space-around;
+
+}
+.justify-space-evenly {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+}
+.final {
+    text-align: center;
+    font-size: 15pt;
+    padding: 30px;
+}

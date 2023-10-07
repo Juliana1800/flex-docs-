@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Documentação</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="espaco-do-h">Flexbox Documentação</h1><hr>
+
+    <h3 class="espaco-do-h3">DISPLAY:FLEX;</h3>
+    <p class="p-descritivo">A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
+    Define um container flex: inline ou blocos, ele é uni-dimensional, ou seja, podemos organizar horizontal ou verticalmente de forma a garatir que o comportem de maneira previsível oara evitar que saia do container de forma inesperada.
+    </p>
+    <p class="descrição-propriedade">Algumas propriedades como flex-direction, justify-content e align-content já vem com os valores padrão</p>
+
+    <table> <!--table>(tr>th.propriedade+th*valor)+tr*3>td.propriedade+td.valor-->
+        <tr>
+            <th class="propriedade-titulo">Propriedade</th>
+            <th class="valor-titulo">Valor</th>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor">row</td>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="valor">flex-start</td>
+        </tr>
+        <tr>
+            <td class="propriedade">align-content</td>
+            <td class="valor">flex-start</td>
+        </tr>
+    </table>
+    <h1 class="titulo-exemplo">Flex-wrap</h1>
+    <p class="p-descritivo">"A propriedade flex-wrap define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas." </p>
+        <ul class="bullet">Seus valore são:
+            <li>
+            Wrap - "Os itens flexíveis são quebrados em multiplas linhas";
+            </li>
+            <li>Nowrap - "Os itens flexíveis são agrupados em uma unica linha, o que pode fazer com que o flex container transborde";
+            </li>
+            <li>Wrap-reverse - "Se comporta da mesma maneira que o wrap, mas os itens flexíveis serão agrupados em várias linhas de baixo para cima.".
+            </li>
+        </ul>
+        <p class="titulos">Wrap</p>
+    <div>
+    <div class="flex container wrap">
+        <div class="contido-pequeno">
+            <p class ="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>  
+    </div>
+    <h1 class="titulos">Nowrap</h1>   
+    <div class="flex container nowrap">
+        <div class="contido-pequeno">
+            <p class ="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class = "font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class = "font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="flex contido-pequeno">
+            <p class="font">21</p>
+        </div>
+        </div>
+    </div>
+    <h1 class="titulos">Wrap-reverse</h1>   
+    <div class="flex container wrap-reverse">
+        <div class="contido-pequeno">
+            <p class ="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <p class="titulo-exemplo">Flex-direction</p>
+    <p class="p-descritivo">"Permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal", como: Column (o eixo principal mostrará os elementos em coluna), Row (em linha), Column Reverse (coluna reversa) e Row reverse (linha reversa).</p> 
+        <div class="flex container-direction">
+            <p class ="font-prime">Column</p>
+            <div class="flex-direction contido column">
+            <div class="mini-cont">
+                <p class="font-prime">1</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">2</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">3</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">4</p>
+            </div>                 
+        </div>
+            <p class ="font-prime">Row</p>
+            <div class="flex-direction contido row">
+            <div class="mini-cont">
+                <p class="font-prime">1</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">2</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">3</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">4</p>
+            </div>
+        </div>
+            <p class ="font-prime">Column-reverse</p>
+            <div class="flex-direction contido column-reverse">
+            <div class="mini-cont">
+                <p class="font-prime">1</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">2</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">3</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">4</p>
+            </div>  
+        </div>
+            <p class ="font-prime">Row-reverse</p>                
+            <div class="flex flex-direction contido row-reverse">
+            <div class="mini-cont">
+                <p class="font-prime">1</p>
+            </div>
+            <div class="flex mini-cont">
+                <p class="font-prime">2</p>
+            </div> 
+            <div class="mini-cont">
+                <p class="font-prime">3</p>
+            </div>
+            <div class="mini-cont">
+                <p class="font-prime">4</p>
+            </div>   
+            </div>
+            </div>
+    <p class="titulo-exemplo">Flex-flow</p>
+    <p class="p-descritivo">É a união do flex-direction com o flex-wrap respectivamente.</p> 
+    <div class="flex container-direction">
+    <p class="font-prime">Column wrap</p>
+        <div class="flex-direction contido column-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>                     
+        </div>
+        <p class ="font-prime">Row-wrap</p>
+        <div class="flex-direction contido row-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>       
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div> 
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>                    
+    </div>
+        <p class ="font-prime">Column-reverse Wrap</p>
+        <div class="flex-direction contido column-reverse-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>                    
+    </div>
+        <p class ="font-prime">Row-reverse Wrap</p>
+        <div class="flex-direction contido row-reverse-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>                  
+        </div>
+    </div>
+        <div class="espacamento">
+        <div class="flex container-direction">
+        <p class="font-prime">Column Wrap-reverse</p>
+        <div class="flex-direction contido column-reverse-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div> 
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div> 
+        </div>
+        <p class="font-prime">Row Wrap-reverse</p>
+        <div class="flex-direction contido row-reverse-wrap">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div> 
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>         
+        </div> 
+        <p class="font-prime">Column/wrap reverse</p>
+        <div class="flex flex-direction contido column-reverse-reverse">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div> 
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>         
+        </div>
+        <p class="font-prime">Row/wrap reverse</p>
+        <div class="flex-direction contido row-reverse-reverse">
+        <div class="mini-cont">
+            <p class="font-prime">1</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">2</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">3</p>
+        </div>        
+        <div class="mini-cont">
+            <p class="font-prime">4</p>
+        </div> 
+        <div class="mini-cont">
+            <p class="font-prime">5</p>
+        </div>
+        <div class="mini-cont">
+            <p class="font-prime">6</p>
+        </div>      
+        </div> 
+    </div>
+        <p class="titulo-exemplo">Align content</p>
+        <p class="p-descritivo">"Define como cada linha é alinhada dentro de um contêiner flexbox/grid. Aplica-se apenas se flex-wrap: wrap estiver presente e se houver várias linhas de itens flexbox/grid. Cada linha preencherá apenas o espaço que precisa."</p>
+        <h1 class="titulos">Center</h1>
+        <p class="p-descritivo">" Centralizados no contêiner."</p>   
+        <div class="flex container align-content-center">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+    </div>
+    <h1 class="titulos">Flex-Start</h1>
+    <p class="p-descritivo">"Cada linha preencherá apenas o espaço necessário. Todos eles se moverão em direção ao início do eixo cruzado do contêiner flexbox/grid."</p>
+    <div class=" flex container align-content-flex-start">
+        <div class="contido-pequeno">
+            <p class ="font">1</p>
+        </div>
+        <div class="contido-maior">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="flex contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">19</p>
+        </div>
+    </div>
+    <h1 class="titulos">Flex-End</h1>
+    <p class="p-descritivo">"Todos eles se moverão em direção ao final do eixo cruzado do contêiner flexbox/grade."</p>
+    <div class="flex container align-content-flex-end">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno ">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Space-between</h1>
+    <p class="p-descritivo">"O espaço restante aparecerá entre as linhas. Distribui os itens uniformemente. O primeiro item está alinhado com o início, o último está alinhado com o final."</p>
+    <div class="flex container align-content-space-between">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Space-Around</h1>
+    <p class="p-descritivo">"O espaço restante será distribuído igualmente pelas linhas: antes da primeira linha, entre as duas e depois da última."</p>
+    <div class="flex container align-content-space-around">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Strech</h1>
+    <p class="p-descritivo">"Distribui os itens uniformemente. Estica itens de tamanho 'automático' para caber no contêiner."</p>
+    <div class="flex container align-content-stretch">
+        <div class="contido-maior">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>    
+    <p class="titulo-exemplo">Align Items</p>
+    <p class="p-descritivo">"Define como os itens do flexbox são alinhados de acordo com o eixo cruzado, dentro de uma linha de um contêiner flexbox.Por padrão, o eixo cruzado é vertical."</p>
+    <h1 class="titulos">Center</h1>   
+    <p class="p-descritivo">"Alinhado verticalmente ao centro."</p>
+    <div class="flex container align-items-center">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+        <h1 class="titulos">Flex-Start</h1>
+        <p class="p-descritivo">"Alinhado verticalmente na parte superior."</p>   
+        <div class=" flex container align-items-flex-start">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Flex-end</h1>
+    <p class="p-descritivo">"Alinhado verticalmente na parte inferior."</p>   
+    <div class="flex container align-items-flex-end">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class = "font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+            </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Baseline</h1>
+    <p class="p-descritivo">"Os itens do flexbox são alinhados na linha de base do eixo cruzado. Por padrão, o eixo cruzado é vertical. Isso significa que os itens do flexbox se alinharão para que a linha de base do texto seja alinhada ao longo de uma linha horizontal."</p>   
+    <div class="flex container align-items-baseline">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <h1 class="titulos">Strech</h1>
+    <p class="p-descritivo">"Estica para preencher o contêiner (respeita largura mínima/largura máxima)."</p>   
+    <div class="flex container align-items-strech">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class ="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">21</p>
+        </div>
+    </div>
+    <p class="titulo-exemplo">Justify-content</p>
+    <p class="p-descritivo">"Define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um flex container."</p>
+    <h1 class="titulos">Center</h1>
+    <p class="p-descritivo">"Os itens do flexbox são centralizados ao longo do eixo principal do contêiner."</p>   
+    <div class="flex container justify-center">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+    </div>
+    <h1 class="titulos">Flex-start</h1>
+    <p class="p-descritivo">"os itens são 'empacotados' no início da direção flexível."</p>   
+    <div class="flex container justify-flex-start">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+    </div>
+    <h1 class="titulos">Flex-end</h1>
+    <p class="p-descritivo">"Os itens são 'embalados' no final da direção flexível."</p>   
+    <div class="flex container justify-flex-end">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+    </div>
+    <h1 class="titulos">Space-between</h1>
+    <p class="p-descritivo">"Os itens são distribuídos uniformemente na linha."
+    Aqui eu usei o Flex-Wrap: wrap; para melhor visualização.
+    </p>   
+    <div class="flex container justify-space-between">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">18</p>
+        </div>
+    </div>
+    <h1 class="titulos">Space-around</h1>
+    <p class="p-descritivo">"O espaço é distribuído em torno dos itens do flexbox: isso adiciona espaço antes do primeiro item e depois do último."</p>   
+    <div class="flex container justify-space-around">
+        <div class="contido-maior">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-maior">
+            <p class="font">11</p>
+        </div>
+    </div>
+    <h1 class="titulos">Space-evenly</h1>
+    <p class="p-descritivo">"Distribui os itens uniformemente Os espaços iniciais, intermediários e finais têm tamanhos iguais." Usei o Flex-wrap: wrap; para melhor visualização.</p>   
+    <div class="flex container justify-space-evenly">
+        <div class="contido-pequeno">
+            <p class="font">1</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">2</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">3</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">4</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">5</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">6</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">7</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">8</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">9</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">10</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">11</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">12</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">13</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">14</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">15</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">16</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">17</p>
+        </div>
+        <div class="contido-pequeno">
+            <p class="font">19</p>
+        </div>  
+        <div class="contido-pequeno">
+            <p class="font">20</p>
+    </div>
+    </div>
+</body>
+<footer>
+    <p class="final">Trabalho de compreensão do Flexbox - Juliana Ritomi Tokura 01/10/2023</p>
+</footer> 
+</html>
