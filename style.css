@@ -123,18 +123,31 @@ th, td {
     font-family: var(--fontbody);
     text-align:center;
 }
+/* .container-pai > div:nth-child(-n+3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+}   */
+
+.container-filho {
+    width: 30rem;
+    height: 10rem;
+    background-color: var(--cordefundocaixa);
+    border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
+    border-radius: 10px; 
+    justify-content: space-around;
+}
 .container {
-    width: 45rem;
-    height: 15rem;
+    width: 30rem;
+    height: 10rem;
     background-color: var(--cordefundocaixa);
     border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
     border-radius: 10px; 
     justify-content: space-around;
     box-shadow: 50px, 10px, #000;
-
 }
-
-
 .flex {
     display: flex;  /*organizador dos itens flex*/
 
@@ -155,6 +168,14 @@ th, td {
     background-color: var(--cordefundocaixa);
     border: 5px solid var(--corsecudaria);
     border-radius: 10px;
+}
+.contido-pequeno {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--corquaternaria);
+    border: 5px solid var(--corsecudaria);
+    border-radius: 10px;
+
 }
 
 .flex-direction {
@@ -212,14 +233,7 @@ th, td {
 .row-reverse-reverse {
     flex-flow: row-reverse wrap-reverse;
 }
-.contido-pequeno {
-    width: 80px;
-    height: 80px;
-    background-color: var(--corquaternaria);
-    border: 5px solid var(--corsecudaria);
-    border-radius: 10px;
 
-}
 .contido-maior {
     width: 75px;
     height: 95px;
