@@ -1,3 +1,5 @@
+/* Colocar os títulos dos containers e os containers dentro de um container */
+
 :root {
     scroll-behavior: smooth; 
     --corprimaria: #DAFFFB;
@@ -16,7 +18,7 @@ body {
 }
 
 body h1:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 10px 0 0 10px;
     text-transform: uppercase;
     font-size: 20pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -156,13 +158,14 @@ th, td {
 
 }
 .container-direction {
-    width:70rem;
+    width:100%;
     height: 8rem;
     background-color: var(--cordefundocaixa);
     border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
     border-radius: 10px;
     justify-content: space-around;
-    padding: 4rem;
+    padding: 4rem 0;
+    gap: 4rem;
 }
 
 .contido {
