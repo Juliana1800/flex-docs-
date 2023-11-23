@@ -18,7 +18,6 @@ body {
 }
 
 body h1:first-child {
-    margin-bottom: 10px 0 0 10px;
     text-transform: uppercase;
     font-size: 20pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -124,6 +123,7 @@ th, td {
     font-size: 15pt;
     font-family: var(--fontbody);
     text-align:center;
+    margin-bottom: 10px;
 }
 .container-pai {
     display: flex;
@@ -133,6 +133,10 @@ th, td {
     border: #000 solid;
     row-gap: 1rem;
     padding: 2rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
 }  
 
@@ -164,17 +168,16 @@ th, td {
     border: 5px solid var(--corprimaria); /* equivalente à cor #000000 - sempre queo pares forem iguais posso resumir o código*/
     border-radius: 10px;
     justify-content: space-around;
-    padding: 4rem 0;
-    gap: 4rem;
+    padding: 1rem 0 5rem 0;
 }
 
-.contido {
-    width: 150px;
-    height: 150px;
+/* .contido {
+    width: 155px;
+    height: 155px;
     background-color: var(--cordefundocaixa);
     border: 5px solid var(--corsecudaria);
     border-radius: 10px;
-}
+} */
 .contido-pequeno {
     width: 3rem;
     height: 3rem;
@@ -193,10 +196,11 @@ th, td {
     padding: 2rem;
 }
 .flex-direction {
-    width: 150px;
-    height: 150px;
+    width: 158px;
+    height: 158px;
     border: 3px solid var(--corsecudaria);
     display: flex; 
+    border-radius: 10px;
 
 }
 .mini-cont {
