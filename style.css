@@ -108,7 +108,206 @@ th, td {
     padding: 20px 20px 20px 0;
     font-size: 15pt;
 }
+/* AQUI FICARÁ TODAS AS ANIMAçÕES USADAS */
+.conteudo1 {
+    animation-name: slidein;
+    animation-duration: 2s; 
 
+}
+@keyframes slidein{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+}
+
+.conteudo2 {
+    animation-name: slidein2;
+    animation-duration: 2s;
+    
+  
+}
+@keyframes slidein2{
+    from {
+        transform: translateX(80%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(00%);
+        opacity: 1;
+    }
+}
+
+.conteudo3 {
+    animation-name: moveup;
+    animation-duration: 3s;
+    animation-timeline: linear;
+   
+}
+@keyframes moveup {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: (80%);
+        opacity: 1;
+    }
+    
+}
+.conteudo4 {
+    animation:drop-in 2s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes drop-in {
+    from {
+        transform:
+        rotate(-30deg) translateY(-80%);
+        opacity: 0;
+    }
+    to {
+        transform:
+        rotate(0deg) translateY(0%);
+        opacity: 1;
+    }
+}
+.conteudo5{
+    animation:drop-out 2s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes drop-out {
+    from {
+        transform: rotate(30deg) translateY(-80%);
+        opacity:0;
+    }
+    to {
+        transform: rotate(0deg) translateY(0%);
+        opacity: 1;
+    }
+
+}
+.conteudo6 {
+    animation:slide-in 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.conteudo7 {
+    animation:slide-in1 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide-in1{
+    from {
+        transform: translateX(-250%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.conteudo8 {
+    animation:slide-in3 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide-in3{ 
+    0%{
+        transform: translateX(-350%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.conteudo9 {
+    animation: slideout 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein4 {
+    from {
+        transform: translateX(-600%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity:1;
+    }
+} 
+.conteudo10 {
+    animation: slideout 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slideout {
+    from {
+      transform: translateX(500%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+.conteudo11 {
+    animation: slideout1 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slideout1 {
+    from {
+      transform: translateX(400%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+.conteudo12 {
+    animation: slideout2 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slideout2 {
+    from {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+.conteudo13 {
+    animation: slideout3 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slideout3 {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
 .wrap {
     flex-wrap: wrap;
 }
@@ -126,18 +325,14 @@ th, td {
     margin-bottom: 10px;
 }
 .container-pai {
+    /* border: #000 solid; */
+    row-gap: 1rem;
+    /* padding: 2rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* align-items: center; */
-    border: #000 solid;
-    row-gap: 1rem;
-    padding: 2rem;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
+  
 }  
 
 .container-filho {
@@ -201,6 +396,7 @@ th, td {
     border: 3px solid var(--corsecudaria);
     display: flex; 
     border-radius: 10px;
+    background-color: var(--cordefundocaixa);
 
 }
 .mini-cont {
