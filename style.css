@@ -111,7 +111,7 @@ th, td {
 /* AQUI FICARÁ TODAS AS ANIMAçÕES USADAS */
 .conteudo1 {
     animation-name: slidein;
-    animation-duration: 2s; 
+    animation-duration: 3s; 
 
 }
 @keyframes slidein{
@@ -127,7 +127,7 @@ th, td {
 
 .conteudo2 {
     animation-name: slidein2;
-    animation-duration: 2s;
+    animation-duration: 3s;
     
   
 }
@@ -144,7 +144,7 @@ th, td {
 
 .conteudo3 {
     animation-name: moveup;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timeline: linear;
    
 }
@@ -235,10 +235,10 @@ th, td {
     }
 }
 .conteudo9 {
-    animation: slideout 2s;
+    animation: slide-in4 2s;
     animation-iteration-count: infinite;
 }
-@keyframes slidein4 {
+@keyframes slide-in4 {
     from {
         transform: translateX(-600%);
         opacity: 0;

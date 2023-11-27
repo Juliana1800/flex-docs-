@@ -9,3 +9,8 @@
 //       elemento.classList.add('animar');
 //     }
 //   });
+
+// JQuery
+// $(window).scroll(function() {
+//     $('.conteudo1').addClass('slidein');
+//  });
