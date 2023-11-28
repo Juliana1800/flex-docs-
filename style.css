@@ -112,6 +112,8 @@ th, td {
 .conteudo1 {
     animation-name: slidein;
     animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
 @keyframes slidein{
@@ -127,7 +129,7 @@ th, td {
 
 .conteudo2 {
     animation-name: slidein2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     
   
 }
@@ -144,7 +146,7 @@ th, td {
 
 .conteudo3 {
     animation-name: moveup;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timeline: linear;
    
 }
@@ -211,7 +213,7 @@ th, td {
 }
 @keyframes slide-in1{
     from {
-        transform: translateX(-250%);
+        transform: translateX(-200%);
         opacity: 0;
     }
     to {
@@ -226,7 +228,7 @@ th, td {
 }
 @keyframes slide-in3{ 
     0%{
-        transform: translateX(-350%);
+        transform: translateX(-250%);
         opacity: 0;
     }
     to {
@@ -240,7 +242,7 @@ th, td {
 }
 @keyframes slide-in4 {
     from {
-        transform: translateX(-600%);
+        transform: translateX(-500%);
         opacity: 0;
     }
     to {
@@ -255,7 +257,7 @@ th, td {
   
   @keyframes slideout {
     from {
-      transform: translateX(500%);
+      transform: translateX(450%);
       opacity: 0;
     }
     to {
@@ -270,7 +272,7 @@ th, td {
   
   @keyframes slideout1 {
     from {
-      transform: translateX(400%);
+      transform: translateX(350%);
       opacity: 0;
     }
     to {
@@ -300,7 +302,7 @@ th, td {
   
   @keyframes slideout3 {
     from {
-      transform: translateX(50%);
+      transform: translateX(40%);
       opacity: 0;
     }
     to {
