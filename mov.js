@@ -12,7 +12,23 @@ function mov () {
     }
   });
 
-// JQuery
-// $(window).scroll(function() {
-//     $('.conteudo1').addClass('slidein');
+JQuery
+$(window).scroll(function() {
+  $('.conteudo2').addClass('slidein');
+    if ($(this).scrollTop() > 100) {
+      $('.conteudo2').addClass('slidein');
+    } else {
+      $('.conteudo2').removeClass('slidein');
+    }
+  });
+
+// $(document).ready(function() {
+//   $(window).on('scroll', function() {
+//     if ($(this).scrollTop() > 100) {
+//       $('.conteudo2').addClass('slidein');
+//     } else {
+//       $('.conteudo2').removeClass('slidein');
+//     }
+//   });
 //  });
+ 

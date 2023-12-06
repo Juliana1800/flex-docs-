@@ -536,3 +536,6 @@ th, td {
     font-size: 15pt;
     padding: 30px;
 }
+@media screen and (max-width: 600px) {
+    .container-pai
+}
